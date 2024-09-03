@@ -14,7 +14,7 @@ app.use(bodyParser.json());
 app.use(bodyParser({ urlencoded: true }))
 
 mongoose.connect(
-    'mongodb+srv://chetan:Shcsl1702@cluster0.u7j2y.mongodb.net/DrDoc?retryWrites=true&w=majority',
+    'MONGODB_URL',
     (err) => {
         if (err) {
             console.log(err);
